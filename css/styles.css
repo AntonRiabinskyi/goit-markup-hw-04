@@ -62,12 +62,22 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
- }
+}
+.page-header::after {
+  content: "";
+  display: block;
+  width: 1600px;
+  height: 0px;
+  margin-top: 32px;
+  background-color: #ececec;
+  border: 1px solid #ECECEC;
+}
 
 /*Page-heder*/
 .page-header {
   padding-top: 24px;
   padding-bottom: 25px;
+  
 }
 
 /* site-nav */
@@ -121,6 +131,8 @@ margin-right: 50px;
 .contact .nav-link:focus {
   color: var(--accent-color);
 }
+
+
 /* Button */
 .button {
   display: inline-block;
@@ -174,7 +186,16 @@ margin-right: 50px;
   padding-bottom: 200px;
   text-align: center;
   background: var(--background-fon-color);
-    
+  max-width: 1600px; 
+  height: 600px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),
+   rgba(47, 48, 58, 0.4)), url(../images/gallery/command-hero.jpg); 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+   
 }
 .hero-title {
   margin-top: 0;
