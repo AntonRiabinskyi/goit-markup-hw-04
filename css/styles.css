@@ -9,6 +9,7 @@
   --second-transparent-color: color: rgba(255, 255, 255, 0.6);
   --portfolio-border-color-: #EEEEEE;
   --bg-hero-color: #C4C4C4;
+  --accent-icon-color: #AFB1B8;
 }
 
 body {
@@ -115,7 +116,7 @@ img {
   margin-left: 93px;
 }
 .site-nav .item:not(:last-child) {
-margin-right: 50px;
+  margin-right: 50px;
 }
 .site-nav .nav-link {
   display: block;
@@ -159,6 +160,9 @@ margin-right: 50px;
 .contact .nav-link:hover,
 .contact .nav-link:focus {
   color: var(--accent-color);
+}
+.contact .nav-link::before {
+ content: "";
 }
 
 
@@ -205,6 +209,7 @@ margin-right: 50px;
 .button-secondary:focus {
   background-color: var(--accent-color);
   color: var(--second-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*Hero*/
@@ -305,6 +310,22 @@ margin-right: 50px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.features-item {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--background-fon-color-team);
+  border-radius: 4px;
+}
+.features-list-icon{
+  width: 70px;
+  height: 70px;
+}
+
 
 /* Team*/
 .team {
@@ -353,6 +374,40 @@ background-color: var(--second-color);
   margin-bottom: 16px;
 }
 /*Clients*/
+.clients-list {
+  display: flex;
+  }
+.clients-list-item {
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1px solid var(--accent-icon-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.clients-list .clients-list-item:nth-child(6n) {
+  margin-right: 0px;
+}
+.clients-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 106px;
+  height: 60px;
+  fill: var(--accent-icon-color);
+}
+.clients-list-item:focus,
+.clients-list-item:hover {
+border: 1px solid var(--accent-color);
+}
+.clients-list-item:focus .clients-list-icon,
+.clients-list-item:hover .clients-list-icon {
+  fill: var(--accent-color);
+}
 
 /* Footer*/
 .page-footer {
@@ -423,9 +478,14 @@ background-color: var(--second-color);
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  box-sizing: border-box;
+ 
 
 }
-
+.work-item:focus,
+.work-item:hover {
+ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .work > .work-item {
   flex-basis: calc(100% / 3 - 30px);
