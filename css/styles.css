@@ -145,9 +145,11 @@ img {
 }
 .contact .item + .item {
  margin-left: 50px;
-} 
+}
+
 .contact .nav-link {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
 
   color: var(--primary-text-color);
@@ -160,9 +162,15 @@ img {
 .contact .nav-link:hover,
 .contact .nav-link:focus {
   color: var(--accent-color);
+  
 }
-.contact .nav-link::before {
- content: "";
+.contact-list-icon {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+.contact-list-icon:hover,
+.contact-list-icon:focus {
+  fill: var(--accent-color);
 }
 
 
@@ -454,6 +462,17 @@ border: 1px solid var(--accent-color);
 .footer-address-item {
   margin-bottom: 9px;
 }
+.footer-title {
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--second-color);
+}
+
 /*Портфолио*/
 .portfolio {
   padding-top: 94px;
