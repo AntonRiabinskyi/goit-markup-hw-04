@@ -8,6 +8,7 @@
   --background-fon-color-team: #F5F4FA;
   --second-transparent-color: color: rgba(255, 255, 255, 0.6);
   --portfolio-border-color-: #EEEEEE;
+  --bg-hero-color: #C4C4C4;
 }
 
 body {
@@ -41,6 +42,33 @@ ul, ol {
 img {
   display: block;
   max-width: 100%;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  }
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-text-color);
+  background-color: var(--second-color);
+  border-radius: 50%;
+  }
+
+  .social-list-link:hover, 
+  .social-list-link:focus {
+    background-color: var(--accent-color);
+  }
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+.social-list-link:hover .social-list-icon, 
+.social-list-link:focus .social-list-icon {
+  fill: var(--second-color);
 }
 
 /* logo*/
@@ -77,6 +105,7 @@ img {
 .page-header {
   padding-top: 24px;
   padding-bottom: 25px;
+  margin: 0 auto;
   
 }
 
@@ -185,7 +214,7 @@ margin-right: 50px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background: var(--background-fon-color);
+  background: var(--bg-hero-color);
   max-width: 1600px; 
   height: 600px; 
   margin-left: auto; 
@@ -227,10 +256,10 @@ margin-right: 50px;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.client-list {
+.doing-list {
   display: flex;
 }
-.client-list .item:not(:last-child) {
+.doing-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -299,6 +328,8 @@ background-color: var(--second-color);
 .item-card-title {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
   text-align: center;
 }
 .team-list .item-card:nth-child(4n) {
@@ -319,7 +350,10 @@ background-color: var(--second-color);
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin: 0 auto;
+  margin-bottom: 16px;
 }
+/*Clients*/
+
 /* Footer*/
 .page-footer {
   min-height: 252px;
