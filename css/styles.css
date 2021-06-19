@@ -423,10 +423,22 @@ border: 1px solid var(--accent-color);
   padding: 60px 0;
   background: var(--background-fon-color);
 }
+.footer-conteiner {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+}
+
 .accent-logo-footer {
   color: var(--second-color);
 }
 /*Address Footer*/
+.footer-address-conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-right: 70px;
+}
 .footer-address {
   font-style: inherit;
   margin-top: 20px;
@@ -471,6 +483,37 @@ border: 1px solid var(--accent-color);
   text-transform: uppercase;
 
   color: var(--second-color);
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin-top: 20px;
+}
+.footer-social-list-link, .footer-social-list-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--second-color);
+  border-radius: 50%;
+}
+  .footer-social-list-link:hover, 
+  .footer-social-list-link:focus {
+    background-color: var(--accent-color);
+  }
+  .footer-social-list-icon {
+    width: 20px;
+    height: 20px;
+}
+  .footer-social-list-link:hover .social-list-icon, 
+  .footer-social-list-link:focus .social-list-icon {
+    fill: var(--second-color);
 }
 
 /*Портфолио*/
