@@ -160,8 +160,8 @@ img {
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
-.nav-link .contact-list-icon:hover,
-.nav-link .contact-list-icon:focus {
+.nav-link:hover .contact-list-icon,
+ .nav-link:focus .contact-list-icon {
   fill: var(--accent-color);
 }
 
