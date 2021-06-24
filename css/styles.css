@@ -398,12 +398,12 @@ background-color: var(--second-color);
   border-radius: 4px;
   fill: var(--accent-icon-color);
 }
-.clients-list-item:focus,
-.clients-list-item:hover {
-border: var(--accent-color);
+.clients-list-link:focus,
+.clients-list-link:hover {
+border-color: var(--accent-color);
 }
-.clients-list-item:focus .clients-list-icon,
-.clients-list-item:hover .clients-list-icon {
+.clients-list-link:focus .clients-list-icon,
+.clients-list-link:hover .clients-list-icon {
   fill: var(--accent-color);
 }
 
